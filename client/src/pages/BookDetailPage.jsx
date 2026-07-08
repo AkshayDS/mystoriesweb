@@ -134,14 +134,7 @@ const BookDetailPage = () => {
         </motion.div>
 
         {/* Main content */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'minmax(200px, 260px) 1fr',
-            gap: 48,
-            alignItems: 'start',
-          }}
-        >
+        <div className="book-detail-grid">
           {/* Cover */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

@@ -124,21 +124,13 @@ const HeroBanner = ({ books = [] }) => {
           />
 
           {/* Content */}
-          <div
-            style={{
-              position: 'relative',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '3rem',
-              gap: '3rem',
-              width: '100%',
-            }}
-          >
+          <div className="hero-banner-content">
             {/* Cover image */}
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.4 }}
+              className="hero-banner-cover"
               style={{
                 flexShrink: 0,
                 width: 200,
@@ -148,7 +140,6 @@ const HeroBanner = ({ books = [] }) => {
                 boxShadow: '0 24px 60px rgba(0,0,0,0.8), 0 0 30px var(--accent-dim)',
                 border: '1px solid var(--border)',
                 borderLeft: '4px solid rgba(255,255,255,0.2)', // Spine effect
-                display: window.innerWidth < 600 ? 'none' : 'block',
               }}
             >
               {book.coverImageUrl ? (
@@ -296,6 +287,7 @@ const HeroBanner = ({ books = [] }) => {
           <button
             onClick={prev}
             aria-label="Previous story"
+            className="hero-arrow hero-arrow-left"
             style={{
               position: 'absolute',
               left: 16,
@@ -324,6 +316,7 @@ const HeroBanner = ({ books = [] }) => {
           <button
             onClick={next}
             aria-label="Next story"
+            className="hero-arrow hero-arrow-right"
             style={{
               position: 'absolute',
               right: 16,

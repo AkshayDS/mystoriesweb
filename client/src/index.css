@@ -534,6 +534,13 @@ a:hover {
   }
 }
 
+.book-detail-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
 /* Mobile helpers */
 @media (max-width: 640px) {
   .hide-mobile { display: none !important; }
@@ -641,7 +648,47 @@ a:hover {
   .hero-img-col {
     order: 2; /* On desktop, illustration comes second */
   }
+}.about-author-section {
+  padding: 2.5rem 1.5rem; /* mobile padding */
 }
 
+@media (min-width: 1024px) {
+  .about-author-section {
+    padding: 3.5rem 3rem; /* desktop padding */
+  }
+}
 
+/* Hero Banner Responsive Layout */
+.hero-banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* mobile layout */
+  align-items: flex-start;
+  padding: 2.5rem 1.5rem;
+  gap: 1.5rem;
+  width: 100%;
+}
 
+.hero-banner-cover {
+  display: none !important; /* Hide cover on mobile */
+}
+
+@media (min-width: 768px) {
+  .hero-banner-content {
+    flex-direction: row; /* desktop layout */
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  .hero-banner-cover {
+    display: block !important; /* Show cover on tablet/desktop */
+  }
+}
+
+/* Hide navigation arrows on small screens to prevent content overlap */
+@media (max-width: 640px) {
+  .hero-arrow {
+    display: none !important;
+  }
+}

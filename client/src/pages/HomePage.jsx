@@ -458,13 +458,13 @@ const HomePage = () => {
         {/* 6. ABOUT THE AUTHOR SECTION */}
         <section
           id="about-author"
+          className="about-author-section"
           style={{
             scrollMarginTop: 120,
             marginBottom: '60px',
             background: 'linear-gradient(135deg, var(--bg-secondary) 0%, rgba(26,27,35,0.4) 100%)',
             border: '1px solid var(--border)',
             borderRadius: 'var(--radius-lg)',
-            padding: '3.5rem 3rem',
             boxShadow: 'var(--shadow-card)',
           }}
         >
