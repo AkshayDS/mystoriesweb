@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files (MUST be ignored to keep secrets safe)
+.env
+server/.env
+client/.env
+
+# Build outputs
+client/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System Files
+.DS_Store
+Thumbs.db
