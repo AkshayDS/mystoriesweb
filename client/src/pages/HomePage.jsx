@@ -169,16 +169,11 @@ const HomePage = () => {
                 background: 'var(--bg-secondary)',
                 border: '1px solid var(--border)',
                 borderRadius: 'var(--radius-lg)',
-                padding: '3.5rem 3rem',
                 boxShadow: 'var(--shadow-card)',
-                display: 'grid',
-                gridTemplateColumns: '1fr',
-                gap: '2.5rem',
-                alignItems: 'center',
               }}
-              className="book-detail-grid"
+              className="hero-detail-grid"
             >
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 18, order: window.innerWidth < 640 ? 2 : 1 }}>
+              <div className="hero-text-col">
                 <div style={{ display: 'inline-flex', alignSelf: 'flex-start', padding: '4px 12px', background: 'rgba(127, 168, 163, 0.1)', color: 'var(--accent-secondary)', border: '1px solid rgba(127, 168, 163, 0.2)', borderRadius: 20, fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', fontFamily: 'var(--font-body)' }}>
                   Welcome to ಮನದ ಪುಟಗಳು
                 </div>
@@ -234,7 +229,7 @@ const HomePage = () => {
                   </button>
                 </div>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'center', order: window.innerWidth < 640 ? 1 : 2 }}>
+              <div className="hero-img-col">
                 <CozyWritingIllustration />
               </div>
             </div>
