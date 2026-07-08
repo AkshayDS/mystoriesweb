@@ -230,20 +230,7 @@ const ProtectedReader = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // ─── Touch swipe support ───────────────────────────────────────────────────
-  const touchStartX = useRef(null);
-  const handleTouchStart = (e) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-  const handleTouchEnd = (e) => {
-    if (touchStartX.current === null) return;
-    const dx = e.changedTouches[0].clientX - touchStartX.current;
-    if (Math.abs(dx) > 50) {
-      if (dx < 0 && currentPage < totalPages) setCurrentPage((p) => p + 1);
-      if (dx > 0 && currentPage > 1) setCurrentPage((p) => p - 1);
-    }
-    touchStartX.current = null;
-  };
+
 
   // ─── Render ────────────────────────────────────────────────────────────────
   if (loading) {
@@ -300,8 +287,6 @@ const ProtectedReader = () => {
     <div
       ref={containerRef}
       onContextMenu={(e) => e.preventDefault()}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
       style={{
         minHeight: '100vh',
         background: 'var(--bg-primary)',
