@@ -105,12 +105,48 @@ const AboutPage = () => {
             {
               icon: <BookOpen size={24} style={{ color: 'var(--accent)' }} />,
               title: 'Why I Write',
-              text: `Stories have always been my way of understanding the world. I write because there are emotions that are too big for conversations, truths that are too complex for explanations, and experiences that deserve to be preserved in words. Every story I publish here is a piece of myself — raw, honest, and crafted with love.`,
+              content: (
+                <p style={{ fontFamily: 'var(--font-reading)', fontSize: '0.97rem', lineHeight: 1.85, color: 'var(--text-secondary)' }}>
+                  Stories have always been my way of understanding the world. I write because there are emotions that are too big for conversations, truths that are too complex for explanations, and experiences that deserve to be preserved in words. Every story I publish here is a piece of myself — raw, honest, and crafted with love.
+                </p>
+              ),
             },
             {
               icon: <Heart size={24} style={{ color: 'var(--accent)' }} />,
-              title: 'For the Reader',
-              text: `ಮನದ ಪುಟಗಳು is completely free to read. No subscriptions, no paywalls, no ads. Just stories. I believe great literature should be accessible to everyone. All I ask is that you respect the work — don't copy or distribute the content, and if a story moves you, share the link, not the text.`,
+              title: 'ಓದುಗರಿಗೆ... (For the Reader)',
+              content: (
+                <div style={{ fontFamily: 'var(--font-reading)', fontSize: '0.97rem', lineHeight: 2, color: 'var(--text-secondary)' }}>
+                  <p style={{ marginBottom: '1rem' }}>ಈ ಪುಸ್ತಕದಲ್ಲಿರುವ ಎಲ್ಲಾ ಕಥೆಗಳು ನನ್ನ ಕಲ್ಪನೆಯಿಂದ ಬರೆಯಲ್ಪಟ್ಟಿವೆ.</p>
+                  
+                  <p style={{ marginBottom: '0.3rem' }}>ಕೆಲವು ಭಾವನೆಗಳು ನಿಜವಾಗಿರಬಹುದು...</p>
+                  <p style={{ marginBottom: '0.3rem' }}>ಕೆಲವು ಪಾತ್ರಗಳು ನಿಮ್ಮ ಜೀವನವನ್ನು ನೆನಪಿಸಬಹುದು...</p>
+                  <p style={{ marginBottom: '1rem' }}>ಕೆಲವು ಘಟನೆಗಳು ನಿಮ್ಮ ಮನಸ್ಸನ್ನು ಮುಟ್ಟಬಹುದು...</p>
+
+                  <p style={{ marginBottom: '1rem' }}>ಆದರೆ ಈ ಕಥೆಗಳು ಯಾರ ಜೀವನವನ್ನೂ ಪ್ರತಿಬಿಂಬಿಸುವುದಿಲ್ಲ.</p>
+                  <p style={{ marginBottom: '1rem' }}>ಇವು ಕೇವಲ ಭಾವನೆಗಳನ್ನು ಹೃದಯಕ್ಕೆ ತಲುಪಿಸಲು ಬರೆಯಲ್ಪಟ್ಟಿವೆ.</p>
+
+                  <p style={{ marginBottom: '0.5rem' }}>ಪ್ರೀತಿ ಎಂದರೆ ಕೇವಲ ಇಬ್ಬರ ಸಂಗಮವಲ್ಲ...</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ಅದು ಕಾಯುವಿಕೆ,</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ಗೌರವ,</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ತ್ಯಾಗ,</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ಮೌನ,</p>
+                  <p style={{ marginBottom: '1rem', paddingLeft: '1rem' }}>ಮತ್ತು ಅನೇಕ ಭಾವನೆಗಳ ಹೆಸರು.</p>
+
+                  <p style={{ marginBottom: '1rem' }}>ಈ ಪುಸ್ತಕದಲ್ಲಿ ನೀವು ಓದುವುದು ಕೇವಲ ಕಥೆಗಳಲ್ಲ...</p>
+                  
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ನಗುವಿನ ಹಿಂದೆ ಇರುವ ನೋವು,</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ಹೇಳದ ಪ್ರೀತಿ,</p>
+                  <p style={{ marginBottom: '0.3rem', paddingLeft: '1rem' }}>ಮುರಿಯದ ಕನಸು,</p>
+                  <p style={{ marginBottom: '1rem', paddingLeft: '1rem' }}>ಮತ್ತು ಜೀವನದ ಸಣ್ಣ ಪಾಠಗಳು.</p>
+
+                  <p style={{ marginBottom: '1rem' }}>ಈ ಪುಟಗಳಲ್ಲಿ ನಿಮ್ಮ ಜೀವನದ ಒಂದು ಕ್ಷಣ ಕಂಡರೆ...<br />ಅದೇ ನನ್ನ ಬರಹದ ಸಂತೋಷ.</p>
+                  
+                  <p style={{ marginBottom: '0.5rem' }}>ಪ್ರತಿ ಕಥೆಯನ್ನು ಹೃದಯದಿಂದ ಬರೆದಿದ್ದೇನೆ.</p>
+                  <p style={{ marginBottom: '1.2rem' }}>ಅದೇ ಹೃದಯದಿಂದ ಓದಿ.</p>
+                  
+                  <p style={{ color: 'var(--accent)', fontWeight: 600 }}>– ಅಕ್ಷಯ್ ಡಿ. ಎಸ್.</p>
+                </div>
+              ),
             },
           ].map((section, i) => (
             <motion.div
@@ -133,16 +169,7 @@ const AboutPage = () => {
                   {section.title}
                 </h2>
               </div>
-              <p
-                style={{
-                  fontFamily: 'var(--font-reading)',
-                  fontSize: '0.97rem',
-                  lineHeight: 1.85,
-                  color: 'var(--text-secondary)',
-                }}
-              >
-                {section.text}
-              </p>
+              {section.content}
             </motion.div>
           ))}
 
