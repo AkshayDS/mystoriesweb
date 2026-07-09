@@ -124,6 +124,7 @@ const Footer = () => {
                 { label: 'Home', to: '/' },
                 { label: 'All Stories', to: '/genre/all' },
                 { label: 'About the Author', to: '/about' },
+                { label: 'Admin Portal', to: '/admin/login' },
               ].map((link) => (
                 <Link
                   key={link.to}
